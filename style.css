@@ -292,5 +292,49 @@ h2 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
+}
+
+@media (max-width: 58.75em) {
+}
+@media (max-width: 44em) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .balance {
+    grid-column: 1;
+  }
+  .operation--transfer {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .operation--loan {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .operation--close {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .movements {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .summary {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .logo {
+    justify-self: right;
+  }
+}
+@media (max-width: 31.25em) {
 }
